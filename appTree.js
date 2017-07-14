@@ -4,6 +4,7 @@
 │   │   └── index.js
 │   ├── app.js
 │   ├── components
+│   │   ├── Header.js
 │   │   └── Main.js
 │   ├── reducers
 │   │   └── index.js
@@ -12,6 +13,8 @@
 │   ├── styles
 │   │   ├── app.scss
 │   │   └── base
+│   │       ├── components
+│   │       │   └── header.scss
 │   │       ├── _core.scss
 │   │       └── _variables.scss
 │   └── tests
@@ -27,4 +30,4 @@
 ├── server.js
 └── webpack.config.js
 
-10 directories, 17 files
+11 directories, 19 files
