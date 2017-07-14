@@ -1,11 +1,31 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import {Link} from 'react-router'
+import {connect} from 'react-redux'
+
+import * as actions from '../actions' 
 
 class Header extends Component {
+
+/*----------------------------------------------------------*/
   authButton = () => {
-    return  (<button>Sign In</button>)
+    if (this.props.authenticated) {
+        return (
+          <button 
+          onClick={ () => this.props.auth(false) }>
+          Sign out
+          </button>
+        )
+    }
+    return  (
+      <button 
+      onClick = { () => this.props.auth(true) }>
+      Sign In
+      </button>
+    )
   }
+  
+/*----------------------------------------------------------*/
   render() {
     return (
     <div className="nav-container">
@@ -31,4 +51,9 @@ class Header extends Component {
   }
 }
 
-export default Header
+/*----------------------------------------------------------*/
+let mapStateToProps = (state) => {
+  return {authenticated: state.authenticated}
+}
+
+export default connect(mapStateToProps, actions)(Header)
