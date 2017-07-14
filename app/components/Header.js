@@ -9,17 +9,17 @@ class Header extends Component {
   render() {
     return (
     <div className="nav-container">
-      <nav className="nav flex-column flex-md-row justify-content-center">
+      <nav className="nav flex-column flex-lg-row justify-content-center">
         <li className="nav-item">
-          <Link className="flex-md-fill text-md-center nav-link timer" 
+          <Link className="flex-lg-fill text-lg-center nav-link-active" 
             to="/">
             Home
           </Link>
         </li>
         <li className="nav-item">
-          <Link className="flex-md-fill text-md-center nav-link author"
+          <Link className="flex-md-fill text-md-center nav-link-active"
             to="/resources">
-            Reourcers
+            Resourcers
           </Link>
         </li>        
         <li className="nav-item">
