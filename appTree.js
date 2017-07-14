@@ -6,8 +6,10 @@
 │   ├── components
 │   │   ├── Header.js
 │   │   ├── Main.js
+│   │   ├── RequireAuth.js
 │   │   └── Resources.js
 │   ├── reducers
+│   │   ├── authReducer.js
 │   │   └── index.js
 │   ├── router
 │   │   └── index.js
@@ -33,4 +35,4 @@
 ├── server.js
 └── webpack.config.js
 
-12 directories, 21 files
+12 directories, 23 files
