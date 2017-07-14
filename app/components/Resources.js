@@ -1,6 +1,6 @@
 import React from  'react'
 
-/*Simples react component*/
+/*Simplest react component*/
 export default () => {
   return (
     <div className="super">

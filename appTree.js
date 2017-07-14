@@ -5,8 +5,11 @@
 │   ├── app.js
 │   ├── components
 │   │   ├── Header.js
-│   │   └── Main.js
+│   │   ├── Main.js
+│   │   └── Resources.js
 │   ├── reducers
+│   │   └── index.js
+│   ├── router
 │   │   └── index.js
 │   ├── store
 │   │   └── configureStore.js
@@ -30,4 +33,4 @@
 ├── server.js
 └── webpack.config.js
 
-11 directories, 19 files
+12 directories, 21 files
