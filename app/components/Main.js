@@ -10,6 +10,7 @@ export default class Main extends Component {
       <div>
         <Header />
         {this.props.children}
+        Everyone can see this
       </div>
     )
   }

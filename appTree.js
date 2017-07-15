@@ -1,16 +1,21 @@
 .
 ├── app
 │   ├── actions
-│   │   └── index.js
+│   │   ├── index.js
+│   │   └── types.js
 │   ├── app.js
 │   ├── components
 │   │   ├── Header.js
 │   │   ├── Main.js
 │   │   ├── RequireAuth.js
-│   │   └── Resources.js
+│   │   ├── Resources.js
+│   │   └── UserList.js
+│   ├── middleware
+│   │   └── async.js
 │   ├── reducers
 │   │   ├── authReducer.js
-│   │   └── index.js
+│   │   ├── index.js
+│   │   └── usersReducer.js
 │   ├── router
 │   │   └── index.js
 │   ├── store
@@ -19,7 +24,8 @@
 │   │   ├── app.scss
 │   │   └── base
 │   │       ├── components
-│   │       │   └── header.scss
+│   │       │   ├── header.scss
+│   │       │   └── userList.scss
 │   │       ├── _core.scss
 │   │       └── _variables.scss
 │   └── tests
@@ -35,4 +41,4 @@
 ├── server.js
 └── webpack.config.js
 
-12 directories, 23 files
+13 directories, 28 files

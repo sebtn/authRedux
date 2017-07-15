@@ -4,7 +4,12 @@ import UserList from './UserList'
 export default () => {
   return (
     <div className="super">
-        <UserList />
+      <label>Form</label>
+        <form action="">
+          <textarea name="" id="" cols="30" rows="10">
+          Only auth can see this!
+          </textarea>
+        </form>
     </div>
   )
 }

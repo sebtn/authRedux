@@ -10,8 +10,8 @@ class UserList extends Component {
   renderUser = (user, index) => {
     return (
       <div className="card card-container " key={index} >
-        <h4 className="card-title "  >{user.name}</h4>
-        <h6 className="card-title "  > {user.username}</h6>
+        <h4 className="card-title">{user.name}</h4>
+        <h6 className="card-title"> {user.username}</h6>
         <p className="card-text"> {user.company.name}</p>
         <p className="card-text"> {user.email}</p>
         <p className="card-text"> {user.website}</p>
