@@ -4,6 +4,7 @@ import {hashHistory} from 'react-router'
 
 /*Higher order component function*/
 export default function (ComposedComponent) {
+  
   class Auth extends Component {
 /*--------------------------------------------------*/
     componentWillMount = () => {
@@ -29,7 +30,8 @@ export default function (ComposedComponent) {
   let mapStateToProps = (state) => {
     return {authenticated: state.authenticated}
   }
+
   return connect(mapStateToProps)(Auth)
-  
+
 }
 
