@@ -2,9 +2,14 @@
   display:flex;
   justify-content: space-around;
   flex-wrap:wrap;
-  margin: 0.5rem 0.5rem;
+  margin: 0.5rem 1rem;
+  color: #333;
 }
 .card {
-  margin: 0.5rem 0.5rem;
+  min-width: 250px;
+  background-color: #dfdfdf;
+  width:30%;
+  margin: 0.25rem 0.5rem;
+  padding : 0.25rem 0.5rem ;
 
 }

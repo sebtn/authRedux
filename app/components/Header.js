@@ -19,13 +19,13 @@ class Header extends Component {
                 to="/">
                 Home
               </Link>
-            </li>            
+            </li>
             <li className="nav-item">
               <Link className="flex-md-fill text-md-center nav-link-active"
                 to="/resources">
                 Resourcers
-              </Link>              
-            </li>  
+              </Link>
+            </li>
             <li className="nav-item">
               <Link className="flex-md-fill text-md-center nav-link-active"
                 to="/users">
@@ -45,6 +45,12 @@ class Header extends Component {
     return  (
       // <div className="nav-container">
         <nav className="nav flex-column flex-lg-row justify-content-center">
+          <li className="nav-item">
+            <Link className="flex-lg-fill text-lg-center nav-link-active" 
+              to="/">
+              Visible only in sign in screen
+            </Link>
+          </li> 
           <li className="nav-item">
             <Link className="flex-lg-fill text-lg-center nav-link-active" 
               to="/">

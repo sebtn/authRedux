@@ -5,7 +5,7 @@ export default (state = [], action) =>{
     case FETCH_USERS:
     // console.log(action.payload.data)
       return [
-        ...state,
+        // ...state,
         ...action.payload.data
       ]
     default:

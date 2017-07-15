@@ -15,10 +15,11 @@
 what the higher component is doing is allowing auth process in selected
 components by doing inside the ``router``:
 
-`` <Route path="/resources" component={Auth(Resources)} /> ``
+`` <Route path="/resources" component={Auth(Resources)} /> `` <br />
+
 `` <Route path="/users" component={Auth(UserList)} /> ``
 
 that way only person that is signed in can access the content.
 
-Don't' forget to connect the selected redux containers to auth
+Don't' forget to connect the selected redux containers to auth <br />
 ``export default connect(mapStateToProps, {auth})(Header)``
