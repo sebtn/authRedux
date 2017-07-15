@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import {Link} from 'react-router'
 import {connect} from 'react-redux'
 
-import * as actions from '../actions' 
+import {auth} from '../actions' 
 import UserList from './UserList'  
 
 class Header extends Component {
@@ -79,4 +79,4 @@ let mapStateToProps = (state) => {
   }
 }
 
-export default connect(mapStateToProps, actions)(Header)
+export default connect(mapStateToProps, {auth})(Header)

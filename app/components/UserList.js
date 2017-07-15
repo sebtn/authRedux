@@ -1,18 +1,21 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
-import * as actions  from '../actions/index'  
+import {fetchUsers} from '../actions/index'  
 
 class UserList extends Component {
   componentWillMount = () => {
     this.props.fetchUsers()
   }
 /*-----------------------------------------------------------*/
-  renderUser = (user) => {
+  renderUser = (user, index) => {
     return (
-      <div className="card card-container" key={user.name}>
-        <h4 className="card-title" >{user.name}</h4>
-        <p className="card-text">Some place here</p>
-        <button className="btn btn-primary">Email</button>
+      <div className="card card-container " key={index} >
+        <h4 className="card-title "  >{user.name}</h4>
+        <h6 className="card-title "  > {user.username}</h6>
+        <p className="card-text"> {user.company.name}</p>
+        <p className="card-text"> {user.email}</p>
+        <p className="card-text"> {user.website}</p>
+        <button className="btn btn-primary">Send Email</button>
       </div>
     )
   }
@@ -21,7 +24,7 @@ class UserList extends Component {
   render(){
     let {users} = this.props
     return (
-      <div>
+      <div className="card-wrap">
         {users.map( this.renderUser )}
       </div>
     )
@@ -35,4 +38,4 @@ let mapStateToProps = (state) => {
   }
 }
 
-export default connect(mapStateToProps, actions)(UserList)
+export default connect(mapStateToProps, {fetchUsers})(UserList)
